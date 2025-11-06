@@ -1,0 +1,98 @@
+{
+  "name": "Example School Configuration",
+  "description": "This is a template configuration file. Copy this file and customize it for your school.",
+  "created_date": "2025-01-01T00:00:00",
+  "program_boundaries": {
+    "Prog_C": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program C Charter Resident - Main program including CM and SYC locations"
+    },
+    "Prog_C_TK": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program C Charter Resident - Transitional Kindergarten (separate from main)"
+    },
+    "Prog_C_CM": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program C Charter Resident - McClellan location (consolidated with main Prog_C)"
+    },
+    "Prog_C_SYC": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program C Charter Resident - Sacramento Youth Center (consolidated with main Prog_C)"
+    },
+    "Prog_N": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program N Non-Resident Charter - Main program including CM and SYC locations"
+    },
+    "Prog_N_TK": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program N Non-Resident Charter - Transitional Kindergarten (separate from main)"
+    },
+    "Prog_N_CM": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program N Non-Resident Charter - McClellan location (consolidated with main Prog_N)"
+    },
+    "Prog_N_SYC": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program N Non-Resident Charter - Sacramento Youth Center (consolidated with main Prog_N)"
+    },
+    "Prog_J": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program J Independent Study Charter Resident"
+    },
+    "Prog_J_TK": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program J Independent Study Charter Resident - Transitional Kindergarten"
+    },
+    "Prog_K": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program K Independent Study Charter Non-Resident"
+    },
+    "Prog_K_TK": {
+      "start": null,
+      "stop": null,
+      "_comment": "Program K Independent Study Charter Non-Resident - Transitional Kindergarten"
+    }
+  },
+  "program_mappings": {
+    "Program C Charter Resident": "Prog_C",
+    "Program C Charter Resident -  Transitional Kindergarten(TK)": "Prog_C_TK",
+    "Program C Charter Resident -  McClellan(CM)": "Prog_C_CM",
+    "Program C Charter Resident -  Sac Youth Center(SYC)": "Prog_C_SYC",
+    "Program N Non-Resident Charter": "Prog_N",
+    "Program N Non-Resident Charter -  Transitional Kindergarten(TK)": "Prog_N_TK",
+    "Program N Non-Resident Charter -  McClellan(CM)": "Prog_N_CM",
+    "Program N Non-Resident Charter -  Sac Youth Center(SYC)": "Prog_N_SYC",
+    "Program J Indep Study Charter Resident": "Prog_J",
+    "Program J Indep Study Charter Non-Resident -  Transitional Kindergarten(TK)": "Prog_J_TK",
+    "Program K Indep Study Charter Non-Resident": "Prog_K",
+    "Program K Indep Study Charter Non-Resident -  Transitional Kindergarten(TK)": "Prog_K_TK"
+  },
+  "_instructions": {
+    "usage": "To use this configuration:",
+    "step_1": "Copy this file to a new file with your school name (e.g., 'MySchool_Elementary.json')",
+    "step_2": "Open your PADC Excel file and note the row numbers where each program's data begins and ends",
+    "step_3": "Update the 'start' and 'stop' values for each program (use Excel row numbers)",
+    "step_4": "Set 'start' and 'stop' to null for programs that don't exist at your school",
+    "step_5": "Update the 'name' field to identify your school/configuration",
+    "step_6": "Load this configuration in the GUI using the 'Load Configuration' button",
+    "notes": [
+      "Row numbers should match Excel row numbers (starting from 1)",
+      "The 'start' row is the first row where the program data appears",
+      "The 'stop' row is the last row where the program data appears",
+      "Programs with null values will be skipped during processing",
+      "CM and SYC locations are automatically consolidated with their main programs (C or N)"
+    ]
+  }
+}
+
